@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "fs-extra": "^10.1.0"
+  },
+  "name": "back-up",
+  "description": "! check config before start !",
+  "version": "2.3.3",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swd-d/back-up.git"
+  },
+  "author": "cliv-shape (swd)",
+  "bugs": {
+    "url": "https://github.com/swd-d/back-up/issues"
+  },
+  "homepage": "https://github.com/swd-d/back-up#readme"
+}
