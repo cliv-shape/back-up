@@ -1,7 +1,6 @@
 const fs = require('fs-extra');
 const sleep = require('util').promisify(setTimeout);
-
-async function main() {
+module.exports = async() => {
     console.log('starting..');
     for(; ;) {
         let number_folder = Number(fs.readFileSync('./number_back.txt', 'utf-8'));
