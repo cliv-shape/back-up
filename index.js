@@ -13,7 +13,7 @@ console.log('[PASS] config checks');
 
 async function start() {
 
-    require('./functions/fs-extra.js')()
+    require('./functions/fs-extra.js')
 
     await sleep(5000)
 
