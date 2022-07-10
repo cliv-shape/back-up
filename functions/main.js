@@ -1,8 +1,5 @@
 const fs = require('fs-extra');
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-};
+const sleep = require('util').promisify(setTimeout);
 
 async function main() {
     console.log('starting..');

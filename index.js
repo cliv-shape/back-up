@@ -1,6 +1,9 @@
+
 require('./functions/fs-extra.js')
 
 require('./functions/github-update.js')
+
+
 
 let cfg = require('./cfg.js');
 
@@ -18,4 +21,4 @@ if(typeof(cfg.CyclesToDeleteOldBackups) != 'number') return console.error('[conf
 }
 console.log('[PASS] config checks');
 
-require('./functions/main.js')()
+require('./functions/main.js')

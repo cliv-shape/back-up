@@ -1,3 +1,7 @@
+const sleep = require('util').promisify(setTimeout);
+
+
+
 try {
     require('fs-extra')
 } catch { 
@@ -7,3 +11,5 @@ try {
         console.log(s)
     })
 }
+
+await sleep(5000)
