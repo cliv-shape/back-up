@@ -34,6 +34,5 @@ module.exports = async() => {
         }
         await sleep(cfg.timeToNextBackUp);
     };
-    console.log('wait. what. cycle ended?')
-    process.exit(1)
+    return console.log('cycle ended. what.')
 };
