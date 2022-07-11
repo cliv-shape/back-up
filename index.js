@@ -1,3 +1,5 @@
+const sleep = require('util').promisify(setTimeout);
+
 let cfg = require('./cfg.js');
 
 if(!cfg.timeToNextBackUp || !cfg.pathTo || !cfg.deleteOldBackups || !cfg.CyclesToDeleteOldBackups) return console.error('[config] don\'t exist timeToNextBackUp, pathTo, deleteOldBackups or CyclesToDeleteOldBackups');
@@ -10,6 +12,7 @@ if(typeof(cfg.CyclesToDeleteOldBackups) != 'number') return console.error('[conf
 console.log('[PASS] config checks');
 
 async function start() {
+    if(cfg.doAutoUpdates) {
 
     require('./functions/fs-extra.js')
 
@@ -18,8 +21,8 @@ async function start() {
     require('./functions/github-update.js')
 
     await sleep(5000)
-
+    };
     require('./functions/main.js')()
-}
+};
 
 start();

@@ -1,3 +1,4 @@
+const cfg = require('../cfg.js')
 const fs = require('fs-extra');
 const sleep = require('util').promisify(setTimeout);
 module.exports = async() => {
