@@ -4,7 +4,7 @@
   },
   "name": "back-up",
   "description": "! check config before start !",
-  "version": "3.0.0-dev",
+  "version": "3.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",

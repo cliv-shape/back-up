@@ -7,4 +7,4 @@ module.exports = {
     deleteOldBackups: true, 
     CyclesToDeleteOldBackups: 5, // if deleteOldBackups === false don't work
     doAutoUpdates: true,
-}
+};
